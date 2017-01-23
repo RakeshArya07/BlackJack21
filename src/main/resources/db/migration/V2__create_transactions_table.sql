@@ -8,7 +8,7 @@ CREATE TABLE `transactions` (
   `dealer_card`     VARCHAR(50),
   `dealer_points`   INT NULL,
   `bet`             INT NULL,
-  `result`          ENUM('WIN', 'LOST') NOT NULL,
+  `result`          ENUM('WIN', 'LOST')  NULL,
   `created`         TIMESTAMP NULL DEFAULT NOW(),
   `modified`        TIMESTAMP NULL DEFAULT NOW(),
   PRIMARY KEY (`id`),
